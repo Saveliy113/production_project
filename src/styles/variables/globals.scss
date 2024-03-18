@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+  --font-family-main: 'Roboto Mono', 'Times New Roman', 'Serif';
+
+  --font-size-m: 16px;
+  --font-line-m: 24px;
+  --font-m: var(--font-size-m) / var(--font-line-m) var(--font-family-main);
+
+  --font-size-l: 24px;
+  --font0line-l: 32px;
+  --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main);
+}
