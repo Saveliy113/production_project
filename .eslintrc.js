@@ -20,5 +20,8 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['react'],
-  rules: {},
+  rules: {
+    semi: 'off',
+    '@typescript-eslint/semi': ['error', 'always'],
+  },
 };
