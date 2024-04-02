@@ -23,5 +23,7 @@ module.exports = {
   rules: {
     semi: 'off',
     '@typescript-eslint/semi': ['error', 'always'],
+    indent: 'off',
+    '@typescript-eslint/indent': ['error', 2],
   },
 };
