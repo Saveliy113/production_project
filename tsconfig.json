@@ -7,6 +7,7 @@
     //В какую спецификацию компилиурем: для поддержки большинством браузеров
     "target": "es5",
     "jsx": "react-jsx",
+    "strictNullChecks": true,
     //Будут обрабатываться не только ts файлы, но и js
     "allowJs": true,
     "moduleResolution": "node",
