@@ -1,5 +1,3 @@
-const { SemicolonPreference } = require('typescript');
-
 module.exports = {
   env: {
     browser: true,
@@ -22,7 +20,5 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['react'],
-  rules: {
-    semi: [2, 'always'],
-  },
+  rules: {},
 };
