@@ -24,6 +24,31 @@ module.exports = {
     semi: 'off',
     '@typescript-eslint/semi': ['error', 'always'],
     indent: 'off',
+    '@typescript-eslint/consistent-type-imports': 'off',
     '@typescript-eslint/indent': ['error', 2],
+    '@typescript-eslint/member-delimiter-style': [
+      'error',
+      {
+        multiline: {
+          delimiter: 'semi',
+          requireLast: true,
+        },
+        singleline: {
+          delimiter: 'semi',
+          requireLast: true,
+        },
+      },
+    ],
+    'space-before-function-paren': ['error', 'always'],
+    '@typescript-eslint/space-before-function-paren': ['error', 'always'],
+    'comma-dangle': 'off',
+    '@typescript-eslint/comma-dangle': [
+      'error',
+      {
+        arrays: 'never',
+        objects: 'always',
+      },
+    ],
+    '@typescript-eslint/strict-boolean-expressions': 'off',
   },
 };
