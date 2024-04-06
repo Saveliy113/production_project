@@ -11,8 +11,12 @@ interface LangSwitcherProps {
 export const LangSwitcher: React.FC<LangSwitcherProps> = ({ className }) => {
   const { t, i18n } = useTranslation();
 
-  const toggle = async (): void => {
-    i18n.changeLanguage(i18n.language === 'ru' ? 'en' : 'ru');
+  const toggle = (): void => {
+    i18n.changeLanguage(i18n.language === 'ru' ? 'en' : 'ru').catch(error => {
+      console.log(
+        `[i18n.LangSwitcher]: error while changing language ${error}`,
+      );
+    });
   };
 
   return (

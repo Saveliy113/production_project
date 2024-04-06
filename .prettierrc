@@ -1,19 +1,13 @@
 {
+  "printWidth": 80,
+  "tabWidth": 2,
+  "useTabs": false,
   "semi": true,
   "singleQuote": true,
   "jsxSingleQuote": false,
+  "trailingComma": "all",
   "bracketSpacing": true,
-  "trailingComma": "none",
-  "tabWidth": 2,
   "arrowParens": "avoid",
   "endOfLine": "lf",
-  "printWidth": 80,
-  "overrides": [
-    {
-      "files": "*.js", // Можете настроить для определенного типа файлов
-      "options": {
-        "function": { "bodyIndent": 0 }
-      }
-    }
-  ]
+  "bracketSameLine": false
 }

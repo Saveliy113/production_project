@@ -4,10 +4,9 @@ import { classNames } from '@/shared/lib/classNames/classNames';
 import { AppRouter } from './providers/Router';
 import { Navbar } from '@/widgets/Navbar';
 import { Sidebar } from '@/widgets/Sidebar';
-import { Suspense } from 'react';
-import { useTranslation } from 'react-i18next';
+import React, { Suspense } from 'react';
 
-const App = () => {
+const App: React.FC = () => {
   const { theme } = useTheme();
 
   return (
