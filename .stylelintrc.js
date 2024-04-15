@@ -7,6 +7,7 @@ module.exports = {
   ],
   rules: {
     'plugin/declaration-block-no-ignored-properties': true,
+    "selector-class-pattern": "^([a-z][a-zA-Z0-9]*|.*(__).*[a-z][a-zA-Z0-9]*)$",
     'order/order': [
       'custom-properties',
       'dollar-variables',
@@ -457,6 +458,7 @@ module.exports = {
         unspecified: 'bottomAlphabetical',
       },
     ],
+    // Правила @media, @keyframes и т.д.
     'at-rule-empty-line-before': [
       'always',
       {
@@ -467,7 +469,6 @@ module.exports = {
     ],
     'at-rule-no-unknown': null,
     'at-rule-no-vendor-prefix': true,
-
     'font-family-name-quotes': 'always-unless-keyword',
     'font-family-no-duplicate-names': true,
     'font-weight-notation': 'numeric',
@@ -483,34 +484,16 @@ module.exports = {
       },
     ],
     // SCSS
-    'scss/at-else-closing-brace-newline-after': 'always-last-in-chain',
-    'scss/at-else-closing-brace-space-after': 'always-intermediate',
-    'scss/at-else-empty-line-before': 'never',
-    'scss/at-else-if-parentheses-space-before': 'always',
-    'scss/at-extend-no-missing-placeholder': null,
-    'scss/at-function-parentheses-space-before': 'never',
-    'scss/at-function-pattern': null,
-    'scss/at-if-closing-brace-newline-after': 'always-last-in-chain',
-    'scss/at-if-closing-brace-space-after': 'always-intermediate',
-    'scss/at-import-no-partial-leading-underscore': true,
-    'scss/at-import-partial-extension-blacklist': null,
-    'scss/at-import-partial-extension-whitelist': null,
     'scss/at-mixin-argumentless-call-parentheses': 'never',
     'scss/at-mixin-parentheses-space-before': 'never',
     'scss/at-mixin-pattern': null,
     'scss/at-rule-no-unknown': true,
     'scss/declaration-nested-properties': 'never',
     'scss/declaration-nested-properties-no-divided-groups': null,
-    'scss/dollar-variable-colon-newline-after': 'always-multi-line',
+    'scss/dollar-variable-colon-newline-after': null,
     'scss/dollar-variable-colon-space-after': 'always-single-line',
     'scss/dollar-variable-colon-space-before': 'never',
-    'scss/dollar-variable-empty-line-before': [
-      'always',
-      {
-        except: ['after-dollar-variable', 'first-nested'],
-        ignore: ['after-comment', 'inside-single-line-block'],
-      },
-    ],
+    'scss/dollar-variable-empty-line-before': null,
     'scss/dollar-variable-no-missing-interpolation': null,
     'scss/dollar-variable-pattern': null,
     'scss/double-slash-comment-empty-line-before': [
@@ -527,7 +510,6 @@ module.exports = {
     'scss/operator-no-newline-before': null,
     'scss/operator-no-unspaced': true,
     'scss/partial-no-import': null,
-    'scss/percent-placeholder-pattern': null,
     'scss/selector-no-redundant-nesting-selector': true,
   },
 };
