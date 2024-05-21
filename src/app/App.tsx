@@ -4,7 +4,7 @@ import { classNames } from '@/shared/lib/classNames/classNames';
 import { AppRouter } from './providers/Router';
 import { Navbar } from '@/widgets/Navbar';
 import { Sidebar } from '@/widgets/Sidebar';
-import React, { Suspense } from 'react';
+import React, { Suspense, useEffect } from 'react';
 
 const App: React.FC = () => {
   const { theme } = useTheme();
