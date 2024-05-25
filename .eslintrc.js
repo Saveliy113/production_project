@@ -14,9 +14,10 @@ module.exports = {
       env: {
         node: true,
       },
-      files: ['.eslintrc.{js,cjs}'],
+      files: ['.eslintrc.{js,cjs}', '*.test.tsx'],
       parserOptions: {
         sourceType: 'script',
+        project: './tsconfig.json',
       },
     },
   ],
@@ -53,6 +54,6 @@ module.exports = {
     // Ошибка при использовании ts-ignore, error и т.д.
     '@typescript-eslint/ban-ts-comment': 'error',
     // Обработка промисов
-    "@typescript-eslint/no-floating-promises": "error"
+    '@typescript-eslint/no-floating-promises': 'error',
   },
 };
