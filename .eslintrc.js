@@ -3,12 +3,7 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: [
-    'standard-with-typescript',
-    'plugin:react/recommended',
-    'plugin:prettier/recommended',
-    'plugin:react/jsx-runtime',
-  ],
+  extends: ['standard-with-typescript', 'plugin:react/recommended', 'plugin:prettier/recommended', 'plugin:react/jsx-runtime', 'plugin:storybook/recommended'],
   overrides: [
     {
       env: {
